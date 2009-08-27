@@ -13,6 +13,12 @@ class PhotosController < ApplicationController
     end
   end
 
+  def delete
+    Photo.find(params[:id]).delete
+    flash[:notice] = 'Deleted Picture No.'+params[:id]
+    redirect_to :action => 'index'
+  end
+
   # GET /photos/1
   # GET /photos/1.xml
   def show

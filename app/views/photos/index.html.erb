@@ -11,6 +11,9 @@
 <div class="autopagerize_page_element">
 <% for p in @photos %>
     <%= image_tag(h(p.url), :class => "photo") %><br />
+    <% if logged_in? %>
+      <%= link_to 'delete', :action => 'delete', :id => p.id %><br />
+    <% end %>
 <% end %>
     <%= will_paginate(@photos)  %>
 </div>
