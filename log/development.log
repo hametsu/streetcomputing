@@ -1979,3 +1979,591 @@ Rendering template within layouts/photos
 Rendering photos/index
   [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
 Completed in 96ms (View: 52, DB: 6) | 200 OK [http://localhost/photos?page=12]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:01:46) [GET]
+  [4;36;1mPhoto Load (4.3ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 176ms (View: 162, DB: 5) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:01:47) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPhoto Load (2.7ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 34ms (View: 18, DB: 4) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:03:42) [GET]
+  Parameters: {"page"=>"3"}
+  [4;36;1mPhoto Load (1.8ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 10[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 31ms (View: 20, DB: 3) | 200 OK [http://localhost/photos?page=3]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:03:42) [GET]
+  Parameters: {"page"=>"4"}
+  [4;35;1mPhoto Load (8.0ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 15[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 44ms (View: 21, DB: 9) | 200 OK [http://localhost/photos?page=4]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:03:45) [GET]
+  Parameters: {"page"=>"5"}
+  [4;36;1mPhoto Load (1.8ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 20[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 72ms (View: 63, DB: 2) | 200 OK [http://localhost/photos?page=5]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:03:46) [GET]
+  Parameters: {"page"=>"6"}
+  [4;35;1mPhoto Load (1.8ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 25[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 39ms (View: 24, DB: 3) | 200 OK [http://localhost/photos?page=6]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:05:33) [GET]
+  [4;36;1mPhoto Load (2.0ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 153ms (View: 143, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:05:34) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPhoto Load (2.2ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 36ms (View: 23, DB: 3) | 200 OK [http://localhost/photos?page=2]
+>> Writing PID to tmp/pids/thin.pid
+>> Using rails adapter
+>> Thin web server (v1.2.2 codename I Find Your Lack of Sauce Disturbing)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:3456, CTRL+C to stop
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:06:26) [GET]
+  [4;36;1mPhoto Load (1.9ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 50ms (View: 40, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:06:28) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPhoto Load (1.4ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 39ms (View: 22, DB: 2) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:06:30) [GET]
+  Parameters: {"page"=>"3"}
+  [4;36;1mPhoto Load (1.7ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 10[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 28ms (View: 18, DB: 3) | 200 OK [http://localhost/photos?page=3]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:06:30) [GET]
+  Parameters: {"page"=>"4"}
+  [4;35;1mPhoto Load (3.3ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 15[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 56ms (View: 31, DB: 4) | 200 OK [http://localhost/photos?page=4]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:06:34) [GET]
+  Parameters: {"page"=>"5"}
+  [4;36;1mPhoto Load (2.2ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 20[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 28ms (View: 17, DB: 3) | 200 OK [http://localhost/photos?page=5]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:06:35) [GET]
+  Parameters: {"page"=>"6"}
+  [4;35;1mPhoto Load (1.9ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 25[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 28ms (View: 18, DB: 3) | 200 OK [http://localhost/photos?page=6]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:06:37) [GET]
+  Parameters: {"page"=>"7"}
+  [4;36;1mPhoto Load (2.5ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 30[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 64ms (View: 52, DB: 3) | 200 OK [http://localhost/photos?page=7]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:06:38) [GET]
+  Parameters: {"page"=>"8"}
+  [4;35;1mPhoto Load (3.5ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 35[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 37ms (View: 24, DB: 4) | 200 OK [http://localhost/photos?page=8]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:08:22) [GET]
+  [4;36;1mPhoto Load (1.3ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 99ms (View: 89, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:08:22) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPhoto Load (3.3ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 49ms (View: 16, DB: 4) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:10:36) [GET]
+  [4;36;1mPhoto Load (1.3ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+ERROR: compiling _run_erb_app47views47photos47index46html46erb RAISED compile error
+/Users/ssig33/Documents/rails/streetcomputing/app/views/photos/index.html.erb:8: syntax error, unexpected tASSOC, expecting '}'
+;  link_to {:controller => 'session', :action => 'destro...
+                          ^
+/Users/ssig33/Documents/rails/streetcomputing/app/views/photos/index.html.erb:8: syntax error, unexpected ',', expecting '}'
+..._to {:controller => 'session', :action => 'destroy'} ; @outp...
+                              ^
+Function body:           def _run_erb_app47views47photos47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1><a href=\"/\">\343\202\271\343\203\210\343\203\252\343\203\274\343\203\210\343\202\263\343\203\263\343\203\224\343\203\245\343\203\274\343\203\206\343\202\243\343\203\263\343\202\260</a></h1>\n\n\n"
+
+
+;  if logged_in? ; @output_buffer.concat "\n    "
+;  form_for(@photo) do |f| ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( f.label "画像URL" ).to_s); @output_buffer.concat "  "; @output_buffer.concat(( f.text_field :url ).to_s); @output_buffer.concat "  "; @output_buffer.concat(( f.submit "追加する" ).to_s); @output_buffer.concat "\n    "
+;  end ; @output_buffer.concat "\n    "
+;  link_to {:controller => 'session', :action => 'destroy'} ; @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n<div class=\"autopagerize_page_element\">\n"
+
+
+;  for p in @photos ; @output_buffer.concat "\n    "
+; @output_buffer.concat(( image_tag(h(p.url), :class => "photo") ).to_s); @output_buffer.concat "<br />\n"
+;  end ; @output_buffer.concat "\n    "
+; @output_buffer.concat(( will_paginate(@photos)  ).to_s); @output_buffer.concat "\n</div>\n<div class=\"autopagerize_insert_before\"></div>\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/ssig33/Documents/rails/streetcomputing/app/views/photos/index.html.erb:21:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/ssig33/Documents/rails/streetcomputing/app/controllers/photos_controller.rb:9:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:102:in `dispatch_cgi'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:28:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/rack/adapter/rails.rb:81:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/rack/adapter/rails.rb:69:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/connection.rb:76:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/connection.rb:74:in `catch'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/connection.rb:74:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/connection.rb:57:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/connection.rb:42:in `receive_data'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.8/lib/eventmachine.rb:242:in `run_machine'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.8/lib/eventmachine.rb:242:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/backends/base.rb:57:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/server.rb:156:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/controllers/controller.rb:80:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/runner.rb:174:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/runner.rb:174:in `run_command'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/runner.rb:140:in `run!'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/bin/thin:6
+/usr/local/bin/thin:19:in `load'
+/usr/local/bin/thin:19
+
+ActionView::TemplateError (compile error
+/Users/ssig33/Documents/rails/streetcomputing/app/views/photos/index.html.erb:8: syntax error, unexpected tASSOC, expecting '}'
+;  link_to {:controller => 'session', :action => 'destro...
+                          ^
+/Users/ssig33/Documents/rails/streetcomputing/app/views/photos/index.html.erb:8: syntax error, unexpected ',', expecting '}'
+..._to {:controller => 'session', :action => 'destroy'} ; @outp...
+                              ^) on line #8 of app/views/photos/index.html.erb:
+5:     <% form_for(@photo) do |f| %>
+6:         <%= f.label "画像URL" %>  <%= f.text_field :url %>  <%= f.submit "追加する" %>
+7:     <% end %>
+8:     <% link_to {:controller => 'session', :action => 'destroy'} %>
+9: <% end %>
+10: 
+11: <div class="autopagerize_page_element">
+
+    app/views/photos/index.html.erb:21:in `compile!'
+    app/controllers/photos_controller.rb:9:in `index'
+    thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.2) lib/thin/connection.rb:57:in `process'
+    thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+    eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+    thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.2) lib/thin/server.rb:156:in `start'
+    thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.2.2) lib/thin/runner.rb:174:in `send'
+    thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+    thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+    thin (1.2.2) bin/thin:6
+    /usr/local/bin/thin:19:in `load'
+    /usr/local/bin/thin:19
+
+Rendered rescues/_trace (50.6ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:10:53) [GET]
+  [4;36;1mPhoto Load (1.2ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 29ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:10:53) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPhoto Load (4.3ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 159ms (View: 134, DB: 5) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:11:54) [GET]
+  [4;36;1mPhoto Load (4.0ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+ERROR: compiling _run_erb_app47views47photos47index46html46erb RAISED compile error
+/Users/ssig33/Documents/rails/streetcomputing/app/views/photos/index.html.erb:8: syntax error, unexpected ')', expecting tASSOC
+...ction => 'destroy', 'logout' ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47photos47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1><a href=\"/\">\343\202\271\343\203\210\343\203\252\343\203\274\343\203\210\343\202\263\343\203\263\343\203\224\343\203\245\343\203\274\343\203\206\343\202\243\343\203\263\343\202\260</a></h1>\n\n\n"
+
+
+;  if logged_in? ; @output_buffer.concat "\n    "
+;  form_for(@photo) do |f| ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( f.label "画像URL" ).to_s); @output_buffer.concat "  "; @output_buffer.concat(( f.text_field :url ).to_s); @output_buffer.concat "  "; @output_buffer.concat(( f.submit "追加する" ).to_s); @output_buffer.concat "\n    "
+;  end ; @output_buffer.concat "\n    "
+; @output_buffer.concat(( link_to :controller => 'session', :action => 'destroy', 'logout' ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n\n<div class=\"autopagerize_page_element\">\n"
+
+
+;  for p in @photos ; @output_buffer.concat "\n    "
+; @output_buffer.concat(( image_tag(h(p.url), :class => "photo") ).to_s); @output_buffer.concat "<br />\n"
+;  end ; @output_buffer.concat "\n    "
+; @output_buffer.concat(( will_paginate(@photos)  ).to_s); @output_buffer.concat "\n</div>\n<div class=\"autopagerize_insert_before\"></div>\n"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/ssig33/Documents/rails/streetcomputing/app/views/photos/index.html.erb:21:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/ssig33/Documents/rails/streetcomputing/app/controllers/photos_controller.rb:9:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:102:in `dispatch_cgi'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:28:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/rack/adapter/rails.rb:81:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/rack/adapter/rails.rb:69:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/connection.rb:76:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/connection.rb:74:in `catch'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/connection.rb:74:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/connection.rb:57:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/connection.rb:42:in `receive_data'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.8/lib/eventmachine.rb:242:in `run_machine'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.8/lib/eventmachine.rb:242:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/backends/base.rb:57:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/server.rb:156:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/controllers/controller.rb:80:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/runner.rb:174:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/runner.rb:174:in `run_command'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/lib/thin/runner.rb:140:in `run!'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.2/bin/thin:6
+/usr/local/bin/thin:19:in `load'
+/usr/local/bin/thin:19
+
+ActionView::TemplateError (compile error
+/Users/ssig33/Documents/rails/streetcomputing/app/views/photos/index.html.erb:8: syntax error, unexpected ')', expecting tASSOC
+...ction => 'destroy', 'logout' ).to_s); @output_buffer.concat ...
+                              ^) on line #8 of app/views/photos/index.html.erb:
+5:     <% form_for(@photo) do |f| %>
+6:         <%= f.label "画像URL" %>  <%= f.text_field :url %>  <%= f.submit "追加する" %>
+7:     <% end %>
+8:     <%= link_to :controller => 'session', :action => 'destroy', 'logout' %>
+9: <% end %>
+10: 
+11: <div class="autopagerize_page_element">
+
+    app/views/photos/index.html.erb:21:in `compile!'
+    app/controllers/photos_controller.rb:9:in `index'
+    thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.2) lib/thin/connection.rb:57:in `process'
+    thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+    eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+    thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.2) lib/thin/server.rb:156:in `start'
+    thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.2.2) lib/thin/runner.rb:174:in `send'
+    thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+    thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+    thin (1.2.2) bin/thin:6
+    /usr/local/bin/thin:19:in `load'
+    /usr/local/bin/thin:19
+
+Rendered rescues/_trace (64.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:12:09) [GET]
+  [4;36;1mPhoto Load (1.8ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 33ms (View: 22, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:12:10) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPhoto Load (1.6ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 72ms (View: 50, DB: 2) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:12:13) [GET]
+
+ActionController::RoutingError (No route matches "/session/destroy" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:12:24) [GET]
+  [4;36;1mPhoto Load (1.2ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 107ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:12:24) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPhoto Load (1.7ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 30ms (View: 19, DB: 2) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-08-27 21:12:26) [GET]
+Redirected to http://localhost:3456/
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-08-27 21:12:26) [GET]
+Redirected to http://localhost:3456/
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:12:26) [GET]
+  [4;36;1mPhoto Load (1.3ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 12ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:12:30) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mPhoto Load (1.4ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 14ms (View: 5, DB: 2) | 200 OK [http://localhost/photos?page=2]

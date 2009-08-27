@@ -5,6 +5,7 @@
     <% form_for(@photo) do |f| %>
         <%= f.label "画像URL" %>  <%= f.text_field :url %>  <%= f.submit "追加する" %>
     <% end %>
+    <%= link_to 'logout', :controller => 'sessions', :action => 'destroy' %>
 <% end %>
 
 <div class="autopagerize_page_element">
