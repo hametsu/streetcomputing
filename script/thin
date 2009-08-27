@@ -1,0 +1,3 @@
+#!/bin/sh 
+thin start -d -e $1 -p $2 -l log/development.log
+tail -f log/development.log

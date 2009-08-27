@@ -2567,3 +2567,1017 @@ Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:12:30) [GET]
 Rendering template within layouts/photos
 Rendering photos/index
 Completed in 14ms (View: 5, DB: 2) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:12:46) [GET]
+  [4;36;1mPhoto Load (1.2ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:12:46) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mPhoto Load (1.3ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 14ms (View: 4, DB: 2) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-08-27 21:15:42) [GET]
+Rendering sessions/new
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-08-27 21:15:47) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"8GXNDEH6VzR6Jr0+jpEoKKQLjBDpYOEP6VIhsPjkcSE=", "login"=>"ssig33", "password"=>"kwgwnzgx7843"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'ssig33') LIMIT 1[0m
+Failed login for 'ssig33' from 127.0.0.1 at Thu Aug 27 12:15:47 UTC 2009
+Rendering sessions/new
+Completed in 17ms (View: 2, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-08-27 21:15:53) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"8GXNDEH6VzR6Jr0+jpEoKKQLjBDpYOEP6VIhsPjkcSE=", "login"=>"ssig33", "password"=>"kwgw78"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'ssig33') LIMIT 1[0m
+Failed login for 'ssig33' from 127.0.0.1 at Thu Aug 27 12:15:53 UTC 2009
+Rendering sessions/new
+Completed in 25ms (View: 4, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-08-27 21:15:55) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"8GXNDEH6VzR6Jr0+jpEoKKQLjBDpYOEP6VIhsPjkcSE=", "login"=>"ssig33", "password"=>""}
+Failed login for 'ssig33' from 127.0.0.1 at Thu Aug 27 12:15:55 UTC 2009
+Rendering sessions/new
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/new" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-27 21:16:03) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create and new):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-08-27 21:16:06) [GET]
+  Parameters: {"id"=>"edit"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create and new):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-08-27 21:16:08) [GET]
+Rendering users/new
+Completed in 47ms (View: 36, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-08-27 21:16:17) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"8GXNDEH6VzR6Jr0+jpEoKKQLjBDpYOEP6VIhsPjkcSE=", "user"=>{"password_confirmation"=>"kwgw78", "password"=>"kwgw78", "login"=>"ssig33", "email"=>"ssig33@gmail.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'ssig33') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'ssig33@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Create (14.1ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "created_at", "crypted_password", "remember_token_expires_at", "updated_at", "remember_token", "login", "email") VALUES('', 'a8548cfe9168c9be2672efe81e60557f5178afd7', '2009-08-27 12:16:17', 'a59df6a158d4c3f4b8c52512d2238bee5354fb10', NULL, '2009-08-27 12:16:17', NULL, 'ssig33', 'ssig33@gmail.com')[0m
+Redirected to http://localhost:3456/
+Completed in 38ms (DB: 15) | 302 Found [http://localhost/users]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:16:17) [GET]
+  [4;35;1mPhoto Load (1.2ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 22ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:16:34) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mPhoto Load (1.4ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:16:36) [GET]
+  Parameters: {"page"=>"3"}
+  [4;35;1mPhoto Load (2.3ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 10[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 31ms (View: 21, DB: 3) | 200 OK [http://localhost/photos?page=3]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:16:36) [GET]
+  Parameters: {"page"=>"4"}
+  [4;36;1mPhoto Load (1.7ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 15[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 30ms (View: 19, DB: 2) | 200 OK [http://localhost/photos?page=4]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:17:00) [GET]
+  Parameters: {"page"=>"5"}
+  [4;35;1mPhoto Load (2.0ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 20[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 32ms (View: 19, DB: 3) | 200 OK [http://localhost/photos?page=5]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:17:01) [GET]
+  Parameters: {"page"=>"6"}
+  [4;36;1mPhoto Load (1.7ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 25[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 28ms (View: 16, DB: 3) | 200 OK [http://localhost/photos?page=6]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:17:10) [GET]
+  Parameters: {"page"=>"7"}
+  [4;35;1mPhoto Load (8.3ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 30[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 44ms (View: 18, DB: 9) | 200 OK [http://localhost/photos?page=7]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:17:12) [GET]
+  Parameters: {"page"=>"8"}
+  [4;36;1mPhoto Load (2.3ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 35[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 151ms (View: 141, DB: 3) | 200 OK [http://localhost/photos?page=8]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:17:27) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPhoto Load (1.4ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 24ms (View: 14, DB: 2) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:21:20) [GET]
+  [4;36;1mPhoto Load (1.2ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 25ms (View: 17, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:21:21) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPhoto Load (5.8ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 42ms (View: 28, DB: 6) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:21:26) [GET]
+
+ActionController::RoutingError (No route matches "/atom" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:21:42) [GET]
+
+ActionController::RoutingError (No route matches "/index.atom" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show to atom (for 127.0.0.1 at 2009-08-27 21:21:47) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mPhoto Load (0.4ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=index):
+  app/controllers/photos_controller.rb:19:in `show'
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendered rescues/_trace (53.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show to atom (for 127.0.0.1 at 2009-08-27 21:22:38) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mPhoto Load (0.2ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=index):
+  app/controllers/photos_controller.rb:19:in `show'
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show (for 127.0.0.1 at 2009-08-27 21:23:15) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=show):
+  app/controllers/photos_controller.rb:19:in `show'
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendered rescues/_trace (43.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show (for 127.0.0.1 at 2009-08-27 21:23:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 1) [0m
+Rendering template within layouts/photos
+Rendering photos/show
+Completed in 38ms (View: 25, DB: 0) | 200 OK [http://localhost/photos/show/1]
+
+
+Processing PhotosController#show (for 127.0.0.1 at 2009-08-27 21:23:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPhoto Load (0.5ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 2) [0m
+Rendering template within layouts/photos
+Rendering photos/show
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://localhost/photos/show/2]
+
+
+Processing PhotosController#show (for 127.0.0.1 at 2009-08-27 21:24:18) [GET]
+  Parameters: {"id"=>"atom"}
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=atom):
+  app/controllers/photos_controller.rb:23:in `show'
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendered rescues/_trace (143.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show (for 127.0.0.1 at 2009-08-27 21:24:21) [GET]
+  Parameters: {"id"=>"atom"}
+  [4;36;1mPhoto Load (0.2ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=atom):
+  app/controllers/photos_controller.rb:23:in `show'
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show (for 127.0.0.1 at 2009-08-27 21:24:48) [GET]
+  Parameters: {"id"=>"atom_feed"}
+  [4;35;1mPhoto Load (0.2ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=atom_feed):
+  app/controllers/photos_controller.rb:23:in `show'
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show (for 127.0.0.1 at 2009-08-27 21:26:16) [GET]
+  Parameters: {"id"=>"atom_feed"}
+  [4;36;1mPhoto Load (0.3ms)[0m   [0;1mSELECT * FROM "photos" WHERE ("photos"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Photo with ID=atom_feed):
+  app/controllers/photos_controller.rb:23:in `show'
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:26:22) [GET]
+
+ActionController::RoutingError (No route matches "/feed/" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:26:39) [GET]
+
+ActionController::RoutingError (No route matches "/feed/" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:26:40) [GET]
+
+ActionController::RoutingError (No route matches "/feed/" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:26:40) [GET]
+
+ActionController::RoutingError (No route matches "/feed/" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:26:53) [GET]
+
+ActionController::RoutingError (No route matches "/feed/" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:26:54) [GET]
+
+ActionController::RoutingError (No route matches "/feed/" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:26:54) [GET]
+
+ActionController::RoutingError (No route matches "/feed/" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:27:06) [GET]
+  [4;35;1mPhoto Load (1.3ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 23ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:27:09) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mPhoto Load (1.5ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 27ms (View: 17, DB: 2) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:27:09) [GET]
+  Parameters: {"page"=>"3"}
+  [4;35;1mPhoto Load (1.8ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 10[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 27ms (View: 15, DB: 2) | 200 OK [http://localhost/photos?page=3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-27 21:27:10) [GET]
+
+ActionController::RoutingError (No route matches "/atom" with {:method=>:get}):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#index (for 127.0.0.1 at 2009-08-27 21:27:13) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mPhoto Load (1.7ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 24ms (View: 15, DB: 2) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:27:40) [GET]
+  [4;35;1mPhoto Load (27.3ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+
+ActionView::MissingTemplate (Missing template feed/index.erb in view path app/views):
+  thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.2) lib/thin/connection.rb:57:in `process'
+  thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.2) lib/thin/server.rb:156:in `start'
+  thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.2) lib/thin/runner.rb:174:in `send'
+  thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.2) bin/thin:6
+  /usr/local/bin/thin:19:in `load'
+  /usr/local/bin/thin:19
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:27:51) [GET]
+  [4;36;1mPhoto Load (79.0ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+Completed in 91ms (View: 6, DB: 79) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:27:53) [GET]
+  [4;35;1mPhoto Load (4.8ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+Completed in 12ms (View: 1, DB: 5) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:27:54) [GET]
+  [4;36;1mPhoto Load (23.0ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+Completed in 32ms (View: 1, DB: 23) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:27:55) [GET]
+  [4;35;1mPhoto Load (4.6ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+Completed in 12ms (View: 1, DB: 5) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:27:55) [GET]
+  [4;36;1mPhoto Load (4.9ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+Completed in 12ms (View: 1, DB: 5) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:27:56) [GET]
+  [4;35;1mPhoto Load (4.6ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+Completed in 11ms (View: 1, DB: 5) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:27:57) [GET]
+  [4;36;1mPhoto Load (9.6ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+Completed in 20ms (View: 1, DB: 10) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:28:20) [GET]
+  [4;35;1mPhoto Load (4.7ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+
+ActionView::TemplateError (undefined method `title' for #<Photo:0x24b808c>) on line #7 of app/views/feed/index.html.builder:
+4: 
+5:   for entry in @photos
+6:     feed.entry(entry) do |item|
+7:       item.title(entry.title) 
+8:       item.content(entry.content, :type => 'html')
+9:       item.author do |author|
+10:         author.name("RSSAuthor")
+
+    app/views/feed/index.html.builder:7:in `_run_builder_app47views47feed47index46html46builder'
+    app/views/feed/index.html.builder:6:in `_run_builder_app47views47feed47index46html46builder'
+    app/views/feed/index.html.builder:5:in `each'
+    app/views/feed/index.html.builder:5:in `_run_builder_app47views47feed47index46html46builder'
+    app/views/feed/index.html.builder:1:in `_run_builder_app47views47feed47index46html46builder'
+    thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.2) lib/thin/connection.rb:57:in `process'
+    thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+    eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+    thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.2) lib/thin/server.rb:156:in `start'
+    thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.2.2) lib/thin/runner.rb:174:in `send'
+    thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+    thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+    thin (1.2.2) bin/thin:6
+    /usr/local/bin/thin:19:in `load'
+    /usr/local/bin/thin:19
+
+Rendered rescues/_trace (151.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:28:46) [GET]
+  [4;36;1mPhoto Load (5.2ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+
+ActionView::TemplateError (undefined method `content' for #<Photo:0x2674cb8>) on line #8 of app/views/feed/index.html.builder:
+5:   for entry in @photos
+6:     feed.entry(entry) do |item|
+7:       'streetcomputing'
+8:       item.content(entry.content, :type => 'html')
+9:       item.author do |author|
+10:         author.name("RSSAuthor")
+11:       end
+
+    app/views/feed/index.html.builder:8:in `_run_builder_app47views47feed47index46html46builder'
+    app/views/feed/index.html.builder:6:in `_run_builder_app47views47feed47index46html46builder'
+    app/views/feed/index.html.builder:5:in `each'
+    app/views/feed/index.html.builder:5:in `_run_builder_app47views47feed47index46html46builder'
+    app/views/feed/index.html.builder:1:in `_run_builder_app47views47feed47index46html46builder'
+    thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.2) lib/thin/connection.rb:57:in `process'
+    thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+    eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+    thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.2) lib/thin/server.rb:156:in `start'
+    thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.2.2) lib/thin/runner.rb:174:in `send'
+    thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+    thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+    thin (1.2.2) bin/thin:6
+    /usr/local/bin/thin:19:in `load'
+    /usr/local/bin/thin:19
+
+Rendered rescues/_trace (61.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:28:48) [GET]
+  [4;35;1mPhoto Load (87.7ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+
+ActionView::TemplateError (undefined method `content' for #<Photo:0x2771bac>) on line #8 of app/views/feed/index.html.builder:
+5:   for entry in @photos
+6:     feed.entry(entry) do |item|
+7:       'streetcomputing'
+8:       item.content(entry.content, :type => 'html')
+9:       item.author do |author|
+10:         author.name("RSSAuthor")
+11:       end
+
+    app/views/feed/index.html.builder:8:in `_run_builder_app47views47feed47index46html46builder'
+    app/views/feed/index.html.builder:6:in `_run_builder_app47views47feed47index46html46builder'
+    app/views/feed/index.html.builder:5:in `each'
+    app/views/feed/index.html.builder:5:in `_run_builder_app47views47feed47index46html46builder'
+    app/views/feed/index.html.builder:1:in `_run_builder_app47views47feed47index46html46builder'
+    thin (1.2.2) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.2) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.2) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.2) lib/thin/connection.rb:57:in `process'
+    thin (1.2.2) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.8) lib/eventmachine.rb:242:in `run_machine'
+    eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+    thin (1.2.2) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.2) lib/thin/server.rb:156:in `start'
+    thin (1.2.2) lib/thin/controllers/controller.rb:80:in `start'
+    thin (1.2.2) lib/thin/runner.rb:174:in `send'
+    thin (1.2.2) lib/thin/runner.rb:174:in `run_command'
+    thin (1.2.2) lib/thin/runner.rb:140:in `run!'
+    thin (1.2.2) bin/thin:6
+    /usr/local/bin/thin:19:in `load'
+    /usr/local/bin/thin:19
+
+Rendered rescues/_trace (57.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FeedController#index (for 127.0.0.1 at 2009-08-27 21:29:08) [GET]
+  [4;36;1mPhoto Load (4.7ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+Completed in 103ms (View: 92, DB: 5) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for ::1 at 2009-08-27 21:29:46) [GET]
+  [4;36;1mPhoto Load (6.4ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+Completed in 171ms (View: 158, DB: 6) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for ::1 at 2009-08-27 21:30:54) [GET]
+  [4;35;1mPhoto Load (5.3ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 200[0m
+Rendering feed/index
+Completed in 108ms (View: 96, DB: 5) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for ::1 at 2009-08-27 21:31:13) [GET]
+  [4;36;1mPhoto Load (2.6ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 20[0m
+Rendering feed/index
+Completed in 43ms (View: 34, DB: 3) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for ::1 at 2009-08-27 21:34:33) [GET]
+  [4;35;1mPhoto Load (2.5ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 20[0m
+Rendering feed/index
+Completed in 45ms (View: 38, DB: 2) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for ::1 at 2009-08-27 21:35:12) [GET]
+  [4;36;1mPhoto Load (2.4ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 20[0m
+Rendering feed/index
+Completed in 46ms (View: 39, DB: 2) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for ::1 at 2009-08-27 21:35:37) [GET]
+  [4;35;1mPhoto Load (2.5ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 20[0m
+Rendering feed/index
+Completed in 56ms (View: 47, DB: 2) | 200 OK [http://localhost/feed]
+
+
+Processing FeedController#index (for ::1 at 2009-08-27 21:37:56) [GET]
+  [4;36;1mPhoto Load (2.6ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 20[0m
+Rendering feed/index
+Completed in 57ms (View: 49, DB: 3) | 200 OK [http://localhost/feed]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:37:58) [GET]
+  [4;35;1mPhoto Load (1.4ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `link_tag' for #<ActionView::Base:0x23bdefc>) on line #9 of app/views/layouts/photos.html.erb:
+6:   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+7:   <title>ストリートコンピューティング</title>
+8:   <%= stylesheet_link_tag 'scaffold' %>
+9:   <%= link_tag %>
+10: </head>
+11: <body>
+12: 
+
+    app/views/layouts/photos.html.erb:9
+    app/controllers/photos_controller.rb:9:in `index'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.5ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:40:10) [GET]
+  [4;36;1mPhoto Load (1.4ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 26ms (View: 17, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:40:11) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPhoto Load (1.6ms)[0m   [0mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 5[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 28ms (View: 16, DB: 3) | 200 OK [http://localhost/photos?page=2]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 21:43:47) [GET]
+  [4;36;1mPhoto Load (1.4ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 32ms (View: 20, DB: 2) | 200 OK [http://localhost/]
