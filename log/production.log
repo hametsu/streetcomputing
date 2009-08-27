@@ -49622,3 +49622,121 @@ Processing PhotosController#index (for 118.11.251.99 at 2009-08-27 15:46:01) [GE
 Rendering template within layouts/photos
 Rendering photos/index
 Completed in 18ms (View: 9, DB: 6) | 200 OK [http://streetcomputing.yuiseki.net/]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:37:46) [GET]
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 87ms (View: 26, DB: 5) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:47:26) [GET]
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 25ms (View: 16, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:47:46) [GET]
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 9ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-27 16:48:15) [GET]
+
+ActionController::RoutingError (No route matches "/2" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering /Users/ssig33/Documents/rails/streetcomputing/public/404.html (404 Not Found)
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:48:30) [GET]
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 10ms (View: 4, DB: 4) | 200 OK [http://localhost/photos/]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:48:39) [GET]
+  Parameters: {"page"=>"2"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 14ms (View: 4, DB: 5) | 200 OK [http://localhost/photos/?page=2]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:49:24) [GET]
+  Parameters: {"page"=>"2"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 8ms (View: 3, DB: 3) | 200 OK [http://localhost/photos/?page=2]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:49:31) [GET]
+  Parameters: {"page"=>"2"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 14ms (View: 6, DB: 4) | 200 OK [http://localhost/photos/?page=2]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:51:09) [GET]
+  Parameters: {"page"=>"2"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 8ms (View: 3, DB: 3) | 200 OK [http://localhost/photos/?page=2]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:52:21) [GET]
+  Parameters: {"page"=>"2"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 8ms (View: 3, DB: 3) | 200 OK [http://localhost/photos/?page=2]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:53:13) [GET]
+  Parameters: {"page"=>"2"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 8ms (View: 3, DB: 3) | 200 OK [http://localhost/photos/?page=2]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:53:20) [GET]
+  Parameters: {"page"=>"1"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 41ms (View: 6, DB: 29) | 200 OK [http://localhost/photos/?page=1]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:54:01) [GET]
+  Parameters: {"page"=>"1"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 8ms (View: 3, DB: 3) | 200 OK [http://localhost/photos/?page=1]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:54:59) [GET]
+  Parameters: {"page"=>"1"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 8ms (View: 3, DB: 3) | 200 OK [http://localhost/photos/?page=1]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:55:15) [GET]
+  Parameters: {"page"=>"1"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 13ms (View: 4, DB: 5) | 200 OK [http://localhost/photos/?page=1]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 16:55:48) [GET]
+  Parameters: {"page"=>"1"}
+Rendering template within layouts/photos
+Rendering photos/index
+Completed in 9ms (View: 4, DB: 3) | 200 OK [http://localhost/photos/?page=1]

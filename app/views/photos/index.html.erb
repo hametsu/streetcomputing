@@ -7,8 +7,10 @@
     <% end %>
 <% end %>
 
-<div class="photo-list">
+<div class="autopagerize_page_element">
 <% for p in @photos %>
     <%= image_tag(h(p.url), :class => "photo") %><br />
 <% end %>
+    <%= will_paginate(@photos)  %>
 </div>
+<div class="autopagerize_insert_before"></div>
