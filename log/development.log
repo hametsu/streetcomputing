@@ -3606,3 +3606,37 @@ Processing FeedController#index (for ::1 at 2009-08-27 21:45:13) [GET]
   [4;36;1mPhoto Load (2.4ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 20[0m
 Rendering feed/index
 Completed in 152ms (View: 144, DB: 2) | 200 OK [http://localhost/feed/]
+
+
+Processing PhotosController#index (for ::1 at 2009-08-27 22:24:32) [GET]
+  [4;36;1mPhoto Load (2.0ms)[0m   [0;1mSELECT * FROM "photos" ORDER BY created_at desc LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "photos" [0m
+Rendering template within layouts/photos
+Rendering photos/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Completed in 49ms (View: 39, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-27 22:24:38) [GET]
+
+ActionController::RoutingError (No route matches "/3" with {:method=>:get}):
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhotosController#show (for ::1 at 2009-08-27 22:24:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPhoto Load (0.3ms)[0m   [0mSELECT * FROM "photos" WHERE ("photos"."id" = 3) [0m
+Rendering template within layouts/photos
+Rendering photos/show
+Completed in 56ms (View: 46, DB: 0) | 200 OK [http://localhost/photos/3]
