@@ -1,0 +1,14 @@
+<h1><a href="/">ストリートコンピューティング</a></h1>
+
+
+<% if logged_in? %>
+    <% form_for(@photo) do |f| %>
+        <%= f.label "画像URL" %>  <%= f.text_field :url %>  <%= f.submit "追加する" %>
+    <% end %>
+<% end %>
+
+<div class="photo-list">
+<% for p in @photos %>
+    <%= image_tag(h(p.url), :class => "photo") %><br />
+<% end %>
+</div>
