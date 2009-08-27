@@ -3,7 +3,8 @@ class PhotosController < ApplicationController
   # GET /photos
   # GET /photos.xml
   def index
-    @photos = Photo.find(:all, :order => "created_at DESC")
+    @id
+    @photos = Photo.paginate(:page => params[:id], :per_page => 20, :order => "created_at DESC")
     @photo = Photo.new
 
     respond_to do |format|

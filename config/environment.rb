@@ -5,7 +5,7 @@
 # ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.2.2' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.3' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -58,7 +58,11 @@ Rails::Initializer.run do |config|
     :session_key => '_streetcomputing_session',
     :secret      => 'f2babdc6acdb6ba0ad871a30ac5979d94bb8cd0a24a16e7c054bf0d24ab8d5b1e2c68c7694808f9c08708f3d661813a06b55a198e6e87e0c62b96c7686554852'
   }
+  
 
+  #pagginate
+  
+  
   # Use the database for sessions instead of the cookie-based default,
   # which shouldn't be used to store highly confidential information
   # (create the session table with "rake db:sessions:create")
